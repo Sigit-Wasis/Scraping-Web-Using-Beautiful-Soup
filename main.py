@@ -34,7 +34,7 @@ if len(href) > 0 :
     	msg.attach(MIMEText(body, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, "jaringan") # password pengirim
+    server.login(fromaddr, "123jajalo") # password pengirim
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
